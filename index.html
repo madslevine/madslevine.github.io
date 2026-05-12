@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <title>Madison Levine</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <style>
     body {
       max-width: 900px;
@@ -13,27 +14,39 @@
       line-height: 1.6;
       color: #222;
     }
+
     nav a {
       margin-right: 18px;
       color: #004080;
       text-decoration: none;
+      font-size: 15px;
     }
+
     nav a:hover {
       text-decoration: underline;
     }
+
     .header {
       display: flex;
       gap: 30px;
       align-items: flex-start;
       margin-top: 30px;
     }
+
     .header img {
       width: 220px;
       border-radius: 4px;
     }
+
     h1, h2 {
       font-weight: normal;
+      margin-bottom: 10px;
     }
+
+    p {
+      margin: 10px 0;
+    }
+
     .button {
       display: inline-block;
       padding: 8px 14px;
@@ -41,8 +54,24 @@
       color: #004080;
       text-decoration: none;
       margin-right: 10px;
-      margin-top: 10px;
+      margin-top: 12px;
+      font-size: 14px;
     }
+
+    .button:hover {
+      background-color: #f2f6fb;
+    }
+
+    .contact span {
+      display: inline-flex;
+      align-items: center;
+      margin-bottom: 6px;
+    }
+
+    .contact svg {
+      margin-right: 6px;
+    }
+
     @media (max-width: 700px) {
       .header {
         flex-direction: column;
@@ -61,6 +90,7 @@
   </nav>
 
   <div class="header">
+
     <img src="assets/headshot.png" alt="Headshot of Madison Levine">
 
     <div>
@@ -73,50 +103,51 @@
 
       <p>
         I am an applied economist working in behavioral economics,
-        development economics, and experiments.
+        development economics, and experimental economics.
       </p>
 
       <p>
-        I am on the 2026–2027 academic job market.
-        My expected Ph.D. completion date is 2027.
+        I am on the 2026–2027 academic job market.<br>
+        Expected Ph.D. completion: 2027.
       </p>
 
-<p style="margin-top: 10px;">
+      <div class="contact">
 
-  <!-- Email -->
-  <span style="display: inline-flex; align-items: center; margin-right: 15px;">
-    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#004080" viewBox="0 0 24 24">
-      <path d="M12 13.065L.015 4.5h23.97L12 13.065zM0 6.75v12.75h24V6.75l-12 8.25L0 6.75z"/>
-    </svg>
-    <a href="mailto:YOUR_EMAIL_HERE" style="margin-left: 6px;">YOUR_EMAIL_HERE</a>
-  </span>
+        <!-- Email -->
+        <span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#004080" viewBox="0 0 24 24">
+            <path d="M12 13.065L.015 4.5h23.97L12 13.065zM0 6.75v12.75h24V6.75l-12 8.25L0 6.75z"/>
+          </svg>
+          <a href="mailto:ml124@illinois.edu">ml124@illinois.edu</a>
+        </span>
 
-  <br>
+        <br>
 
-  <!-- LinkedIn -->
-  <span style="display: inline-flex; align-items: center; margin-right: 15px;">
-    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#004080" viewBox="0 0 24 24">
-      <path d="M4.98 3.5C4.98 4.88 3.87 6 2.49 6S0 4.88 0 3.5 1.11 1 2.49 1 4.98 2.12 4.98 3.5zM.5 8h4v16h-4V8zm7.5 0h3.8v2.2h.05c.53-1 1.82-2.2 3.75-2.2C20.4 8 22 10.3 22 13.6V24h-4v-9.3c0-2.2-.04-5-3.05-5-3.05 0-3.52 2.4-3.52 4.8V24h-4V8z"/>
-    </svg>
-    <a href="https://www.linkedin.com/in/madison-elizabeth-levine/" target="_blank" style="margin-left: 6px;">
-      LinkedIn
-    </a>
-  </span>
+        <!-- LinkedIn -->
+        <span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#004080" viewBox="0 0 24 24">
+            <path d="M4.98 3.5C4.98 4.88 3.87 6 2.49 6S0 4.88 0 3.5 1.11 1 2.49 1 4.98 2.12 4.98 3.5zM.5 8h4v16h-4V8zm7.5 0h3.8v2.2h.05c.53-1 1.82-2.2 3.75-2.2C20.4 8 22 10.3 22 13.6V24h-4v-9.3c0-2.2-.04-5-3.05-5-3.05 0-3.52 2.4-3.52 4.8V24h-4V8z"/>
+          </svg>
+          <a href="https://www.linkedin.com/in/madison-elizabeth-levine/" target="_blank" rel="noopener noreferrer">
+            LinkedIn
+          </a>
+        </span>
 
-  <br>
+        <br>
 
-  <!-- Location -->
-  <span style="display: inline-flex; align-items: center;">
-    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#004080" viewBox="0 0 24 24">
-      <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5 14.5 7.62 14.5 9 13.38 11.5 12 11.5z"/>
-    </svg>
-    <span style="margin-left: 6px;">Urbana-Champaign, IL</span>
-  </span>
+        <!-- Location -->
+        <span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#004080" viewBox="0 0 24 24">
+            <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5 14.5 7.62 14.5 9 13.38 11.5 12 11.5z"/>
+          </svg>
+          Urbana-Champaign, IL
+        </span>
 
-</p>
+      </div>
 
       <a class="button" href="cv.html">CV</a>
       <a class="button" href="research.html">Research</a>
+
     </div>
   </div>
 
