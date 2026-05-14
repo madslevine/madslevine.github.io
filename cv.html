@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CV | Madison Levine</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: #222;
+      background: #fff;
+      line-height: 1.45;
+    }
+
+    nav {
+      max-width: 1100px;
+      margin: 24px auto 28px;
+      padding: 0 40px;
+    }
+
+    nav a {
+      margin-right: 38px;
+      color: #004080;
+      text-decoration: none;
+      font-size: 18px;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 40px 50px;
+    }
+
+    h1 {
+      font-size: 36px;
+      font-weight: 400;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 18px;
+      margin-bottom: 22px;
+    }
+
+    a {
+      color: #006f8f;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 8px 16px;
+      border: 1px solid #004080;
+      color: #004080;
+      text-decoration: none;
+      margin-right: 10px;
+      margin-bottom: 24px;
+      font-size: 16px;
+    }
+
+    .button:hover {
+      background-color: #f2f6fb;
+    }
+
+    iframe {
+      width: 100%;
+      height: 850px;
+      border: 1px solid #ccc;
+    }
+
+    @media (max-width: 700px) {
+      nav, main {
+        padding: 0 22px;
+      }
+
+      iframe {
+        height: 650px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="research.html">Research</a>
+    <a href="teaching.html">Teaching</a>
+    <a href="cv.html">CV</a>
+  </nav>
+
+  <main>
+    <h1>Curriculum Vitae</h1>
+
+    <p>
+      You can view my CV below or download it as a PDF.
+    </p>
+
+    <a class="button" href="assets/cv.pdf" target="_blank" rel="noopener noreferrer">
+      Open CV
+    </a>
+
+    <a class="button" href="assets/cv.pdf" download>
+      Download CV
+    </a>
+
+    <iframe src="assets/cv.pdf"></iframe>
+  </main>
+
+</body>
+</html>
