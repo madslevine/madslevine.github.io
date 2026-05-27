@@ -34,20 +34,74 @@
     }
 
     main {
-      max-width: 900px;
-      margin: 80px auto;
+      max-width: 1000px;
+      margin: 50px auto 80px;
       padding: 0 20px;
     }
 
     h1 {
-      font-size: 48px;
+      font-size: 52px;
       font-weight: normal;
-      margin-bottom: 20px;
+      margin-bottom: 30px;
     }
 
     p {
-      font-size: 24px;
-      color: #444;
+      font-size: 20px;
+      max-width: 850px;
+      margin-bottom: 28px;
+    }
+
+    h2 {
+      font-size: 32px;
+      font-weight: normal;
+      margin-top: 50px;
+      margin-bottom: 20px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background-color: rgba(255,255,255,0.35);
+      border-radius: 6px;
+      overflow: hidden;
+    }
+
+    th, td {
+      text-align: left;
+      padding: 18px 20px;
+      font-size: 18px;
+    }
+
+    th {
+      border-bottom: 2px solid #d5d5d5;
+      font-weight: 600;
+      background-color: rgba(255,255,255,0.4);
+    }
+
+    tr:not(:last-child) td {
+      border-bottom: 1px solid #dddddd;
+    }
+
+    @media (max-width: 800px) {
+
+      nav a {
+        margin-right: 18px;
+        font-size: 16px;
+      }
+
+      h1 {
+        font-size: 40px;
+      }
+
+      p {
+        font-size: 18px;
+      }
+
+      table {
+        display: block;
+        overflow-x: auto;
+      }
+
     }
 
   </style>
@@ -65,11 +119,56 @@
 
   <main>
 
-    <h1>Teaching Assistance Course Materials</h1>
+    <h1>Teaching</h1>
 
     <p>
-      Coming soon.
+      I have served as a teaching assistant and co-instructor for undergraduate economics courses at the University of Illinois Urbana-Champaign and the University of San Francisco.
     </p>
+
+    <p>
+      My teaching experience includes microeconomics and the global food economy.
+    </p>
+
+    <h2>Teaching Experience</h2>
+
+    <table>
+
+      <tr>
+        <th>Course</th>
+        <th>Role</th>
+        <th>Institution</th>
+        <th>Term</th>
+      </tr>
+
+      <tr>
+        <td>Intermediate Microeconomics (ACE 300)</td>
+        <td>Co-Instructor</td>
+        <td>University of Illinois Urbana-Champaign</td>
+        <td>Fall 2026</td>
+      </tr>
+
+      <tr>
+        <td>Intermediate Microeconomics (ACE 300)</td>
+        <td>Teaching Assistant</td>
+        <td>University of Illinois Urbana-Champaign</td>
+        <td>Fall 2025</td>
+      </tr>
+
+      <tr>
+        <td>World Food Economy (ACE 251)</td>
+        <td>Teaching Assistant</td>
+        <td>University of Illinois Urbana-Champaign</td>
+        <td>Fall 2023</td>
+      </tr>
+
+      <tr>
+        <td>Introduction to Microeconomics</td>
+        <td>Teaching Assistant</td>
+        <td>University of San Francisco</td>
+        <td>2018–2019</td>
+      </tr>
+
+    </table>
 
   </main>
 
