@@ -8,49 +8,86 @@
 
   <style>
 
-    body {
-      margin: 0;
-      background-color: #ede9f7;
-      font-family: Arial, sans-serif;
-      color: #111;
-      line-height: 1.7;
-    }
+  body {
+    margin: 0;
+    background-color: #ede9f7;
+    font-family: Arial, sans-serif;
+    color: #111;
+    line-height: 1.7;
+  }
 
-    nav {
-      max-width: 1100px;
-      margin: 0 auto;
-      padding: 18px 20px;
-    }
+  nav {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 18px 20px;
+  }
 
+  nav a {
+    margin-right: 40px;
+    text-decoration: none;
+    color: #004080;
+    font-size: 18px;
+  }
+
+  nav a:hover {
+    text-decoration: underline;
+  }
+
+  main {
+    max-width: 1000px;
+    margin: 50px auto 80px;
+    padding: 0 20px;
+  }
+
+  h1 {
+    font-size: 52px;
+    font-weight: normal;
+    margin-bottom: 30px;
+  }
+
+  h2 {
+    font-size: 32px;
+    font-weight: normal;
+    margin-top: 50px;
+    margin-bottom: 20px;
+  }
+
+  p {
+    font-size: 20px;
+    max-width: 850px;
+    margin-bottom: 28px;
+  }
+
+  .abstract {
+    font-size: 17px;
+    color: #333;
+    max-width: 850px;
+    background-color: rgba(255,255,255,0.35);
+    border-radius: 6px;
+    padding: 20px 24px;
+    margin-bottom: 28px;
+  }
+
+  .tag {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 600;
+    color: #004080;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+  }
+
+  @media (max-width: 800px) {
     nav a {
-      margin-right: 40px;
-      text-decoration: none;
-      color: #004080;
-      font-size: 18px;
+      margin-right: 18px;
+      font-size: 16px;
     }
+    h1 { font-size: 40px; }
+    p, .abstract { font-size: 18px; }
+  }
 
-    nav a:hover {
-      text-decoration: underline;
-    }
-
-    main {
-      max-width: 900px;
-      margin: 80px auto;
-      padding: 0 20px;
-    }
-
-    h1 {
-      font-size: 48px;
-      font-weight: normal;
-      margin-bottom: 20px;
-    }
-
-    p {
-      font-size: 24px;
-      color: #444;
-    }
-
-  </style>
+</style>
 </head>
 
 <body>
@@ -64,14 +101,65 @@
   </nav>
 
   <main>
+  <h1>Research</h1>
 
-    <h1>Research</h1>
+  <h2>Job Market Paper</h2>
 
-    <p>
-      Coming soon.
-    </p>
+  <p>
+    <strong>Loss Aversion and Agricultural Investment: Experimental Evidence from Smallholder Farmers in Kenya</strong><br>
+    with S. Janzen, B. Kramer, and K. Shikuku
+  </p>
 
-  </main>
+  <div class="abstract">
+    <span class="tag">Abstract</span><br>
+    Smallholder farmers persistently underinvest in productivity-enhancing agricultural inputs. We study whether loss aversion explains this gap, asking: (1) how does it affect fertilizer investment, and (2) how do the pricing and payout structures of available risk management environments shape investment and participation decisions? We combine a dynamic model of fertilizer investment under Prospect Theory with a lab-in-the-field experiment involving 209 farmers in Kenya. Loss aversion is measured via price list lotteries and maximum likelihood estimation. Farmers make incentivized fertilizer decisions across experimental conditions varying seed technology and risk management structure, with willingness to pay elicited via Becker-DeGroot-Marschak auction. Our model predicts that loss aversion reduces fertilizer investment by amplifying the perceived cost of upfront expenditure. It further predicts attenuation under emergency credit, which covers fertilizer costs in bad weather where fertilizer has zero marginal product. A one-unit increase in loss aversion is associated with 1.4 fewer kilograms of fertilizer. This effect does not vary significantly across technology or risk management environments. Loss aversion suppresses demand for insurance and emergency credit by a similar amount but does not predict which product farmers prefer. The results point to farmer engagement rather than product choice as the binding constraint for loss-averse smallholders.
+  </div>
+
+  <!-- TODO: add link to draft once available, e.g.:
+  <a href="assets/jmp.pdf" target="_blank" rel="noopener noreferrer">Draft (PDF)</a>
+  -->
+
+  <h2>Publications</h2>
+
+  <p>
+    N.F. Meriggi, M. Voors, <strong>M. Levine</strong>, A.M. Mobarak, et al.
+    <a href="https://www.nature.com/articles/s41586-024-07158-w" target="_blank" rel="noopener noreferrer">Last-Mile Delivery Increases Vaccine Uptake in Sierra Leone</a>.
+    <em>Nature</em>, 627: 612–619, 2024.
+  </p>
+
+  <p>
+    <strong>M. Levine</strong>, N.F. Meriggi, A.M. Mobarak, V. Ramakrishna, M. Voors, and U. Wadehra.
+    <a href="https://www.aeaweb.org/articles?id=10.1257/pandp.20231092" target="_blank" rel="noopener noreferrer">Gendered Disparities during the COVID-19 Crisis in Sierra Leone</a>.
+    <em>AEA Papers and Proceedings</em>, 113: 567–571, 2023.
+  </p>
+
+  <p>
+    J.S. Solis Arce, S.S. Warren, N.F. Meriggi, <strong>M. Levine</strong>, et al.
+    <a href="https://doi.org/10.1038/s41591-021-01454-y" target="_blank" rel="noopener noreferrer">COVID-19 Vaccine Acceptance and Hesitancy in Low- and Middle-Income Countries</a>.
+    <em>Nature Medicine</em>, 27: 1385–1394, 2021.
+  </p>
+
+  <h2>Working Papers</h2>
+
+  <p>
+    B. Kramer, F. Cecchi, <strong>M. Levine</strong>, and L. Waithaka.<br>
+    <em>See It Grow: A Randomized Evaluation of a Digital Innovation to Improve Crop Insurance Contract Design</em><br>
+    <a href="https://cgspace.cgiar.org/items/92c5be75-1bf8-4b23-8323-ed0dbfae729a" target="_blank" rel="noopener noreferrer">CGIAR Discussion Paper (2025)</a>
+  </p>
+
+  <h2>Work in Progress</h2>
+
+  <p>
+    B. Kramer, M. Braun, <strong>M. Levine</strong>, A. Owuor, and R. Hill.<br>
+    <em>Country demand for speed and flexibility in pre-arranged financing: Evidence from disaster risk financing simulations in five countries in Africa</em>
+  </p>
+
+  <p>
+    B. Kramer, F. Cecchi, and <strong>M. Levine</strong>.<br>
+    <em>Women's Downside Risk Exposure as a Barrier to Agricultural Investment and Technology Adoption</em>
+  </p>
+
+</main>
 
 </body>
 </html>
