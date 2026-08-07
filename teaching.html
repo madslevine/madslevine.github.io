@@ -1,192 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
- 
 <head>
-  <meta charset="UTF-8">
-  <title>Teaching | Madison Levine</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <style>
-
-    body {
-      margin: 0;
-      background-color: #ede9f7;
-      font-family: Arial, sans-serif;
-      color: #111;
-      line-height: 1.7;
-    }
-
-    nav {
-      max-width: 1100px;
-      margin: 0 auto;
-      padding: 18px 20px;
-    }
-
-    nav a {
-      margin-right: 40px;
-      text-decoration: none;
-      color: #004080;
-      font-size: 18px;
-    }
-
-    nav a:hover {
-      text-decoration: underline;
-    }
-
-    main {
-      max-width: 1000px;
-      margin: 50px auto 80px;
-      padding: 0 20px;
-    }
-
-    h1 {
-      font-size: 52px;
-      font-weight: normal;
-      margin-bottom: 30px;
-    }
-
-    p {
-      font-size: 20px;
-      max-width: 850px;
-      margin-bottom: 28px;
-    }
-
-    h2 {
-      font-size: 32px;
-      font-weight: normal;
-      margin-top: 50px;
-      margin-bottom: 20px;
-    }
-
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      background-color: rgba(255,255,255,0.35);
-      border-radius: 6px;
-      overflow: hidden;
-    }
-
-    th, td {
-      text-align: left;
-      padding: 18px 20px;
-      font-size: 18px;
-    }
-
-    th {
-      border-bottom: 2px solid #d5d5d5;
-      font-weight: 600;
-      background-color: rgba(255,255,255,0.4);
-    }
-
-    tr:not(:last-child) td {
-      border-bottom: 1px solid #dddddd;
-    }
-
-    .quote-card {
-      background-color: rgba(255,255,255,0.35);
-      border-radius: 6px;
-      padding: 16px 20px;
-      font-size: 17px;
-      font-style: italic;
-      color: #333;
-      max-width: 850px;
-      margin-bottom: 16px;
-    }
-
-    @media (max-width: 800px) {
-
-      nav a {
-        margin-right: 18px;
-        font-size: 16px;
-      }
-
-      h1 {
-        font-size: 40px;
-      }
-
-      p {
-        font-size: 18px;
-      }
-
-      table {
-        display: block;
-        overflow-x: auto;
-      }
-
-    }
-
-  </style>
+<meta charset="UTF-8">
+<title>Teaching | Madison Levine</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  margin: 0;
+  background-color: #ede9f7;
+  font-family: Arial, sans-serif;
+  color: #111;
+  line-height: 1.7;
+}
+nav {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 18px 20px;
+}
+nav a {
+  margin-right: 40px;
+  text-decoration: none;
+  color: #004080;
+  font-size: 18px;
+  border-radius: 3px;
+}
+nav a:hover {
+  text-decoration: underline;
+}
+nav a:focus-visible {
+  outline: 2px solid #004080;
+  outline-offset: 3px;
+}
+main {
+  max-width: 1000px;
+  margin: 50px auto 80px;
+  padding: 0 20px;
+}
+h1 {
+  font-size: 52px;
+  font-weight: normal;
+  margin: 0 0 30px;
+  text-wrap: balance;
+}
+h2 {
+  font-size: 32px;
+  font-weight: normal;
+  margin: 0 0 20px;
+  text-wrap: balance;
+}
+section + section {
+  margin-top: 50px;
+}
+p {
+  font-size: 20px;
+  max-width: 850px;
+  margin: 0 0 28px;
+}
+p:last-child {
+  margin-bottom: 0;
+}
+.course-list, .quote-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 850px;
+}
+.course-card {
+  background-color: rgba(255, 255, 255, 0.35);
+  border-radius: 6px;
+  padding: 22px 26px;
+}
+.course-card h3 {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0 0 6px;
+  color: #111;
+}
+.course-card .meta {
+  font-size: 16px;
+  color: #555;
+}
+.tag {
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 600;
+  color: #004080;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+.quote-card {
+  background-color: rgba(255, 255, 255, 0.35);
+  border-radius: 6px;
+  padding: 16px 20px;
+  font-size: 17px;
+  font-style: italic;
+  color: #333;
+}
+@media (max-width: 800px) {
+  nav a {
+    margin-right: 18px;
+    font-size: 16px;
+  }
+  h1 {
+    font-size: 40px;
+  }
+  p, .quote-card {
+    font-size: 18px;
+  }
+}
+</style>
 </head>
-
 <body>
 
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="research.html">Research</a>
-    <a href="teaching.html">Teaching</a>
-    <a href="fieldwork.html">Fieldwork</a>
-    <a href="cv.html">CV</a>
-  </nav>
+<nav>
+<a href="index.html">Home</a>
+<a href="research.html">Research</a>
+<a href="teaching.html">Teaching</a>
+<a href="fieldwork.html">Fieldwork</a>
+<a href="cv.html">CV</a>
+</nav>
 
-  <main>
-    <p>
-      I have served as a teaching assistant for undergraduate economics courses at the University of Illinois Urbana-Champaign and the University of San Francisco.
-    </p>
+<main>
 
-    <h2>Teaching Experience</h2>
+<h1>Teaching</h1>
 
-    <table>
+<p>I have served as a teaching assistant for undergraduate economics courses at the University of Illinois Urbana-Champaign and the University of San Francisco. In my discussion sections, I reinforce material from lecture by walking students through applied examples and problem sets, helping them build intuition for how the concepts work in practice.</p>
 
-      <tr>
-        <th>Course</th>
-        <th>Role</th>
-        <th>Institution</th>
-        <th>Term</th>
-      </tr>
+<section>
+<h2>Teaching Experience</h2>
+<div class="course-list">
 
-      <tr>
-        <td>Intermediate Microeconomics (ACE 300)</td>
-        <td>Teaching Assistant</td>
-        <td>University of Illinois Urbana-Champaign</td>
-        <td>Fall 2025, Fall 2026</td>
-      </tr>
+<div class="course-card">
+<span class="tag">Teaching Assistant</span>
+<h3>Intermediate Microeconomics (ACE 300)</h3>
+<div class="meta">University of Illinois Urbana-Champaign &middot; Fall 2025, Fall 2026</div>
+</div>
 
-      <tr>
-        <td>World Food Economy (ACE 251)</td>
-        <td>Teaching Assistant</td>
-        <td>University of Illinois Urbana-Champaign</td>
-        <td>Fall 2023</td>
-      </tr>
+<div class="course-card">
+<span class="tag">Teaching Assistant</span>
+<h3>World Food Economy (ACE 251)</h3>
+<div class="meta">University of Illinois Urbana-Champaign &middot; Fall 2023</div>
+</div>
 
-      <tr>
-        <td>Principles of Microeconomics (ECON 111)</td>
-        <td>Teaching Assistant</td>
-        <td>University of San Francisco</td>
-        <td>2018–2019</td>
-      </tr>
+<div class="course-card">
+<span class="tag">Teaching Assistant</span>
+<h3>Principles of Microeconomics (ECON 111)</h3>
+<div class="meta">University of San Francisco &middot; 2018-2019</div>
+</div>
 
-    </table>
+</div>
+</section>
 
-    <h2>Student Feedback</h2>
+<section>
+<h2>Student Feedback</h2>
 
-    <p>
-      Fall 2025 teaching evaluations (ACE 300, both discussion sections combined): average rating of
-      <strong>4.2/5</strong> for overall teaching effectiveness.
-    </p>
+<p>Fall 2025 teaching evaluations (ACE 300, both discussion sections combined): average rating of <strong>4.2/5</strong> for overall teaching effectiveness.</p>
 
-    <div class="quote-card">
-      "The TA taught everything in a direct and clear manner, making it easy to understand and it's all practical and useful knowledge."
-    </div>
+<div class="quote-list">
+<div class="quote-card">&ldquo;The TA taught everything in a direct and clear manner, making it easy to understand and it's all practical and useful knowledge.&rdquo;</div>
+<div class="quote-card">&ldquo;She's a good TA.&rdquo;</div>
+<div class="quote-card">&ldquo;Nice to see examples and how to use material for exams and homework.&rdquo;</div>
+</div>
+</section>
 
-    <div class="quote-card">
-      "She's a good TA."
-    </div>
-
-    <div class="quote-card">
-      "Nice to see examples and how to use material for exams and homework."
-    </div>
-
-  </main>
+</main>
 
 </body>
 </html>
