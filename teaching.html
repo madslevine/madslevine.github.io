@@ -32,9 +32,9 @@ nav a:focus-visible {
   outline-offset: 3px;
 }
 main {
-  max-width: 1000px;
-  margin: 50px auto 80px;
-  padding: 0 20px;
+  max-width: 1040px;
+  margin: 60px auto 100px;
+  padding: 0 32px;
 }
 h1 {
   font-size: 38px;
@@ -45,17 +45,17 @@ h1 {
 h2 {
   font-size: 26px;
   font-weight: 400;
-  margin: 0 0 20px;
+  margin: 0 0 24px;
   text-wrap: balance;
 }
 hr {
   border: none;
-  border-top: 1px solid #cfcfcf;
-  margin: 34px 0 40px;
+  border-top: 1px solid #d3cde6;
+  margin: 38px 0 44px;
   max-width: 850px;
 }
 section + section {
-  margin-top: 50px;
+  margin-top: 60px;
 }
 p {
   font-size: 20px;
@@ -70,45 +70,62 @@ p {
 p:last-child {
   margin-bottom: 0;
 }
-.course-list, .quote-list {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
+.course-list {
   max-width: 850px;
 }
-.course-card {
-  background-color: rgba(255, 255, 255, 0.35);
-  border-radius: 6px;
-  padding: 22px 26px;
+.course-entry {
+  padding: 22px 0;
+  border-bottom: 1px solid #d3cde6;
 }
-.course-card h3 {
-  font-size: 20px;
+.course-entry:first-child {
+  padding-top: 0;
+}
+.course-entry:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+.course-entry .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 8px 24px;
+}
+.course-entry h3 {
+  font-size: 22px;
   font-weight: 600;
-  margin: 0 0 6px;
+  margin: 0;
   color: #111;
 }
-.course-card .meta {
+.course-entry .term {
   font-size: 16px;
   color: #555;
+  white-space: nowrap;
 }
-.tag {
-  display: inline-block;
-  font-size: 13px;
-  font-weight: 600;
-  color: #004080;
-  letter-spacing: 0.5px;
-  text-transform: uppercase;
-  margin-bottom: 6px;
+.course-entry .sub {
+  font-size: 16px;
+  font-style: italic;
+  color: #555;
+  margin-top: 6px;
 }
-.quote-card {
-  background-color: rgba(255, 255, 255, 0.35);
-  border-radius: 6px;
-  padding: 16px 20px;
-  font-size: 17px;
+.quote-list {
+  max-width: 850px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.student-quote {
+  border-left: 3px solid #004080;
+  padding-left: 20px;
+  margin: 0;
+  font-size: 18px;
   font-style: italic;
   color: #333;
 }
 @media (max-width: 800px) {
+  main {
+    padding: 0 22px;
+  }
   nav a {
     margin-right: 18px;
     font-size: 16px;
@@ -116,8 +133,13 @@ p:last-child {
   h1 {
     font-size: 32px;
   }
-  p, .quote-card {
+  p, .student-quote {
     font-size: 18px;
+  }
+  .course-entry .row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2px;
   }
 }
 </style>
@@ -144,22 +166,28 @@ p:last-child {
 <h2>Teaching Experience</h2>
 <div class="course-list">
 
-<div class="course-card">
-<span class="tag">Teaching Assistant</span>
+<div class="course-entry">
+<div class="row">
 <h3>Intermediate Microeconomics (ACE 300)</h3>
-<div class="meta">University of Illinois Urbana-Champaign &middot; Fall 2025, Fall 2026</div>
+<span class="term">Fall 2025, Fall 2026</span>
+</div>
+<div class="sub">Teaching Assistant &middot; University of Illinois Urbana-Champaign</div>
 </div>
 
-<div class="course-card">
-<span class="tag">Teaching Assistant</span>
+<div class="course-entry">
+<div class="row">
 <h3>World Food Economy (ACE 251)</h3>
-<div class="meta">University of Illinois Urbana-Champaign &middot; Fall 2023</div>
+<span class="term">Fall 2023</span>
+</div>
+<div class="sub">Teaching Assistant &middot; University of Illinois Urbana-Champaign</div>
 </div>
 
-<div class="course-card">
-<span class="tag">Teaching Assistant</span>
+<div class="course-entry">
+<div class="row">
 <h3>Principles of Microeconomics (ECON 111)</h3>
-<div class="meta">University of San Francisco &middot; 2018-2019</div>
+<span class="term">2018-2019</span>
+</div>
+<div class="sub">Teaching Assistant &middot; University of San Francisco</div>
 </div>
 
 </div>
@@ -171,9 +199,9 @@ p:last-child {
 <p>Fall 2025 teaching evaluations (ACE 300, both discussion sections combined): average rating of <strong>4.2/5</strong> for overall teaching effectiveness.</p>
 
 <div class="quote-list">
-<div class="quote-card">&ldquo;The TA taught everything in a direct and clear manner, making it easy to understand and it's all practical and useful knowledge.&rdquo;</div>
-<div class="quote-card">&ldquo;She's a good TA.&rdquo;</div>
-<div class="quote-card">&ldquo;Nice to see examples and how to use material for exams and homework.&rdquo;</div>
+<blockquote class="student-quote">&ldquo;The TA taught everything in a direct and clear manner, making it easy to understand and it's all practical and useful knowledge.&rdquo;</blockquote>
+<blockquote class="student-quote">&ldquo;She's a good TA.&rdquo;</blockquote>
+<blockquote class="student-quote">&ldquo;Nice to see examples and how to use material for exams and homework.&rdquo;</blockquote>
 </div>
 </section>
 
